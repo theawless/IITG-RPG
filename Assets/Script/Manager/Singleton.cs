@@ -4,9 +4,7 @@ namespace Script.Manager
 {
     public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
-        private static readonly object lockObject = new object();
-        private static readonly GameObject gameController = GameObject.FindGameObjectWithTag("GameController");
-        private static T instance = gameController.AddComponent<T>();
+        private static T instance = GameObject.FindGameObjectWithTag("GameController").AddComponent<T>();
 
         public static T Instance
         {
