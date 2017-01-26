@@ -230,7 +230,6 @@ GameObject:
   - 4: {fileID: 1012213895}
   - 54: {fileID: 1012213894}
   - 136: {fileID: 1012213893}
-  - 95: {fileID: 1012213892}
   - 114: {fileID: 1012213891}
   - 114: {fileID: 1012213890}
   m_Layer: 0
@@ -271,23 +270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 648df3a834c0963409fe39421c0f466e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &1012213892
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1012213889}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b235179bd2a63d1468dd430670338c55, type: 3}
-  m_Controller: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!136 &1012213893
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -448,6 +430,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: -0.11041513
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b235179bd2a63d1468dd430670338c55, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 608f41512892c6e4593890230ca360e7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b235179bd2a63d1468dd430670338c55, type: 3}
   m_IsPrefabParent: 0
