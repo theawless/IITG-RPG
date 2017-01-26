@@ -52,13 +52,17 @@ namespace Script.Character.Movement
 
         private void SetupAnimator()
         {
-            animator = GetComponent<Animator>();
+            animator = gameObject.AddComponent<Animator>();
             foreach (var childAnimator in GetComponentsInChildren<Animator>())
             {
                 if (animator != childAnimator)
                 {
                     animator.avatar = childAnimator.avatar;
+                    animator.runtimeAnimatorController = childAnimator.runtimeAnimatorController;
+                    animator.updateMode = childAnimator.updateMode;
+                    animator.cullingMode = childAnimator.cullingMode;
                     Destroy(childAnimator);
+                    return;
                 }
             }
         }
